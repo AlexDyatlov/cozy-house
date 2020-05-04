@@ -1,11 +1,7 @@
 @import 'fonts';
 @import 'vars';
 @import 'global';
-//-----------------------------------------------------------------------------------------------------------
-//
-//                                                    START CODE
-//
-//-----------------------------------------------------------------------------------------------------------
+
 .header{
   min-height: 925px;
   background-repeat: no-repeat;
@@ -18,6 +14,7 @@
   height: 47px;
   align-items: center;
   margin-bottom: 250px;
+  padding-top: 60px;
 }
 .header__logo{
   a{
@@ -78,11 +75,39 @@
   }
 }
 
+.about-shelter{
+  padding: 90px 0;
+  background-color: #fafafa;
+  &__inner{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__img{
+    min-height: 410px;
+    max-width: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.about__item{
+  max-width: 415px;
+  &-title{
+    font-size: 35px;
+    color: #545454;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #4c4c4c;
+    margin-bottom: 34px;
+  }
+}
 
-//-----------------------------------------------------------------------------------------------------------
-//
-//                                                    END CODE
-//
-//-----------------------------------------------------------------------------------------------------------
+
+
 
 @import 'media';

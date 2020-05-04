@@ -6,11 +6,77 @@
 //                                                    START CODE
 //
 //-----------------------------------------------------------------------------------------------------------
-
-
-
-
-
+.header{
+  min-height: 925px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header__top{
+  display: flex;
+  justify-content: space-between;
+  height: 47px;
+  align-items: center;
+  margin-bottom: 250px;
+}
+.header__logo{
+  a{
+    font-size: 32px;
+    color: $bg;
+  }
+}
+.header__text{
+  font-size: 13px;
+  color: #fff;
+  line-height: 29px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.menu__list{
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 40px;
+    }
+  }
+  a{
+    font-size: 15px;
+    color: #cdcdcd;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 45px;
+      height: 3px;
+      background-color: $bg;
+    }
+  }
+}
+.header__info{
+  max-width: 395px;
+  &-title{
+    font-size: 44px;
+    line-height: 57px;
+    color: #fff;
+    margin-bottom: 45px;
+  }
+  &-description{
+    margin-bottom: 45px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  &-btn{
+    color: #000;
+    font-size: 17px;
+    padding: 20px 45px;
+    background-color: $bg;
+    border-radius: 50px;
+    display: inline-block;
+  }
+}
 
 
 //-----------------------------------------------------------------------------------------------------------

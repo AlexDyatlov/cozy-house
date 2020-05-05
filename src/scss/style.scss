@@ -1,7 +1,7 @@
 @import 'fonts';
 @import 'vars';
 @import 'global';
-
+// start header
 .header{
   min-height: 925px;
   background-repeat: no-repeat;
@@ -74,7 +74,9 @@
     display: inline-block;
   }
 }
+// end header
 
+//start about-shelter
 .about-shelter{
   padding: 90px 0;
   background-color: #fafafa;
@@ -106,8 +108,112 @@
     margin-bottom: 34px;
   }
 }
+// end about shelter
 
-
-
+// start pets
+.pets-slider{
+  padding: 80px 0 70px;
+  background-color: #f6f6f6;
+}
+.pets-slider__title{
+  font-size: 35px;
+  line-height: 45px;
+  color: #545454;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.pets-slider__inner{
+  max-width: 910px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 65px;
+}
+.pets__item{
+  max-width: 270px;
+  min-height: 424px;
+  background-color: #fafafa;
+  border-radius: 9px;
+  text-align: center;
+  &-img{
+    height: 270px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin-bottom: 30px;
+    outline: none;
+  }
+  &-title{
+    font-size: 20px;
+    color: #545454;
+    margin-bottom: 20px;
+  }
+  &-btn{
+    font-size: 17px;
+    color: #292929;
+    padding: 15px 34px;
+    border: 2px solid $bg;
+    display: inline-block;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
+.pets__item:hover{
+  box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+  transition: all .5s;
+}
+.pets__item-btn:hover{
+  border: none;
+  background-color: $bg;
+}
+.slider-arrows{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid $bg;
+  background-color: $bg;
+  top: 50%;
+  cursor: pointer;
+  outline: none;
+}
+.slider-arrows:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'icomoon';
+}
+.slider-arrows__left:before{
+  content: "\e901";
+}
+.slider-arrows__right:before{
+  content: "\e900";
+}
+.slider-arrows__left{
+  left: -112px; 
+}
+.slider-arrows__right{
+  right: -82px;
+}
+.slider-arrows.slick-disabled{
+  cursor: default;
+  background-color: transparent;
+}
+.pets-slider__btn{
+  position: relative;
+  display: inline-block;
+  padding: 20px 49px;
+  background-color: $bg;
+  border-radius: 50px;
+  color: #292929;
+  font-size: 17px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
+  outline: none;
+}
+// end pets
 
 @import 'media';

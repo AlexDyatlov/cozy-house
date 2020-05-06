@@ -110,7 +110,7 @@
 }
 // end about shelter
 
-// start pets
+// start slider pets
 .pets-slider{
   padding: 80px 0 70px;
   background-color: #f6f6f6;
@@ -214,6 +214,39 @@
   transform: translate(-50%, 0%);
   outline: none;
 }
-// end pets
+// end slider pets
+
+// start help shelter
+.help-shelter{
+  padding: 72px 0 40px;
+  background-color: #fafafa;
+}
+.help-shelter__title{
+  text-align: center;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #545454;
+  margin-bottom: 50px;
+}
+.help__list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+.help__list-item{
+  padding: 50px 60px;
+  img{
+    max-width: 55px;
+    max-height: 55px;
+  }
+  p{
+   font-weight: normal;
+    font-size: 20px;
+    color: #545454;
+  }
+}
+//end help shelter
 
 @import 'media';

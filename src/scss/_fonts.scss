@@ -5,11 +5,11 @@
 // font-family: 'Raleway', sans-serif;
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?r0mc6l');
-  src:  url('../fonts/icomoon.eot?r0mc6l#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?r0mc6l') format('truetype'),
-    url('../fonts/icomoon.woff?r0mc6l') format('woff'),
-    url('../fonts/icomoon.svg?r0mc6l#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?b9ydrv');
+  src:  url('../fonts/icomoon.eot?b9ydrv#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?b9ydrv') format('truetype'),
+    url('../fonts/icomoon.woff?b9ydrv') format('woff'),
+    url('../fonts/icomoon.svg?b9ydrv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,9 +30,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-long-arrow-right:before {
-  content: "\e900";
-}
 .icon-long-arrow-left:before {
-  content: "\e901";
+  content: "\f177";
+}
+.icon-long-arrow-right:before {
+  content: "\f178";
+}
+.icon-credit-card-alt:before {
+  content: "\f283";
+}
+.icon-credit-card:before {
+  content: "\e93f";
 }

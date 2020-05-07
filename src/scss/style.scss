@@ -186,10 +186,10 @@
   font-family: 'icomoon';
 }
 .slider-arrows__left:before{
-  content: "\e901";
+  content: "\f177";
 }
 .slider-arrows__right:before{
-  content: "\e900";
+  content: "\f178";
 }
 .slider-arrows__left{
   left: -112px; 
@@ -248,5 +248,63 @@
   }
 }
 //end help shelter
+
+// start donation
+.donation{
+  padding: 73px 0 85px;
+  background-color: #f6f6f6;
+}
+.donation__inner{
+  display: flex;
+  justify-content: space-evenly;
+  &-img{
+    max-width: 505px;
+    min-height: 261px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.donation__content{
+  max-width: 365px;
+  &-title{
+    font-size: 35px;
+    color: #545454;
+    line-height: 42px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  &-description{
+    color: #545454;
+    margin-bottom: 15px;
+  }
+  &-text{
+    font-size: 12px;
+    line-height: 18px;
+    color: #b2b2b2;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+.donation-btn{
+  padding: 17px 15px 17px 59px;
+  background-color: $bg;
+  border-radius: 9px;
+  font-size: 20px;
+  color: #000000;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 33px;
+  &::before{
+    content: "\e93f";
+    font-family: 'icomoon';
+    position: absolute;
+    font-size: 30px;
+    left: 14px;
+  }
+}
+
+//end donation
 
 @import 'media';

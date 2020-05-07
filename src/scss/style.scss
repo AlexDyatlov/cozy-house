@@ -72,6 +72,17 @@
     background-color: $bg;
     border-radius: 50px;
     display: inline-block;
+    position: relative;
+    &::before{
+      content: '';
+      background-image: url(../img/content/headerdog-bg.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 658px;
+      height: 728px;
+      top: -437px;
+      left: 575px;
+    }
   }
 }
 // end header
@@ -304,7 +315,73 @@
     left: 14px;
   }
 }
-
 //end donation
+
+//start footer
+.footer{
+  background-image: url(../img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 362px;
+  &__inner{
+    display: flex;
+    
+    padding: 80px 0;
+  }
+}
+.footer__col{
+  max-width: 385px;
+  position: relative;
+  &-title{
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+}
+.footer__col-img::before{
+  content: '';
+  position: absolute;
+  background-image: url(../img/content/footerdog-bg.png);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 317px;
+  top: -18px;
+  left: 350px;
+}
+.footer__info{
+  font-size: 20px;
+  color: $bg;
+  margin-bottom: 45px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  padding-left: 55px;
+  position: relative;
+  &::before{
+    font-family: 'icomoon';
+    content: "\f003";
+    position: absolute;
+    left: 0;
+    font-size: 30px;
+  }
+}
+.footer__info-phone{
+  font-family: 'Lato', sans-serif;
+  &::before{
+  content: "\f095";
+ }
+}
+.footer__info-street{
+  &::before{
+    content: "\e948";
+  }
+}
+//end footer
+
+
+
+
 
 @import 'media';

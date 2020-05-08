@@ -42,7 +42,8 @@
     position: relative;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    &::after{
+    &:hover{
+      &::after{
       content: '';
       position: absolute;
       bottom: -10px;
@@ -50,6 +51,7 @@
       width: 45px;
       height: 3px;
       background-color: $bg;
+      }
     }
   }
 }
@@ -108,6 +110,7 @@
   max-width: 415px;
   &-title{
     font-size: 35px;
+    line-height: 42px;
     color: #545454;
     font-weight: 400;
     margin-bottom: 40px;
@@ -125,10 +128,33 @@
 .pets-slider{
   padding: 80px 0 70px;
   background-color: #f6f6f6;
+  .slick-dots{
+    text-align: center;
+    margin-top: 30px;
+    li{
+      display: inline-block;
+      margin-left: 4px;
+      margin-right: 4px;
+      &.slick-active{
+        button{
+          background-color: $bg;
+        }
+      }
+      button{
+        border-radius: 50%;
+        border: 2px solid $bg;
+        background-color: transparent;
+        font-size: 0;
+        width: 22px;
+        height: 22px;
+        outline: none;
+      }
+    }
+  }
 }
 .pets-slider__title{
   font-size: 35px;
-  line-height: 45px;
+  line-height: 42px;
   color: #545454;
   text-align: center;
   margin-bottom: 65px;
@@ -137,14 +163,14 @@
   max-width: 910px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
+  text-align: center;
 }
 .pets__item{
   max-width: 270px;
   min-height: 424px;
   background-color: #fafafa;
   border-radius: 9px;
-  text-align: center;
   &-img{
     height: 270px;
     width: 100%;
@@ -206,7 +232,7 @@
   left: -112px; 
 }
 .slider-arrows__right{
-  right: -82px;
+  right: -114px;
 }
 .slider-arrows.slick-disabled{
   cursor: default;
@@ -224,6 +250,11 @@
   top: 50%;
   transform: translate(-50%, 0%);
   outline: none;
+  &:hover{
+    border: 2px solid $bg;
+    background-color: transparent;
+    transition: all .5s;
+  }
 }
 // end slider pets
 
@@ -235,7 +266,7 @@
 .help-shelter__title{
   text-align: center;
   font-size: 35px;
-  line-height: 45px;
+  line-height: 42px;
   font-weight: 400;
   color: #545454;
   margin-bottom: 50px;
@@ -270,8 +301,9 @@
   justify-content: space-evenly;
   &-img{
     max-width: 505px;
-    min-height: 261px;
+    height: 261px;
     width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -379,7 +411,6 @@
   }
 }
 //end footer
-
 
 
 

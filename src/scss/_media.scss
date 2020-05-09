@@ -14,7 +14,7 @@
   .help__list-item{
     width: 100%;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -36,6 +36,10 @@
 }
 
 @media (max-width: 800px){
+  .popup__inner{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
   .menu__list{
     display: none;
     position: absolute;

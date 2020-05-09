@@ -3,6 +3,7 @@
 @import 'global';
 // start header
 .header{
+  height: 100vh;
   min-height: 925px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,6 +195,7 @@
     display: inline-block;
     border-radius: 50px;
     cursor: pointer;
+    outline: none;
   }
 }
 .pets__item:hover{
@@ -358,8 +360,7 @@
   min-height: 362px;
   &__inner{
     display: flex;
-    
-    padding: 80px 0;
+    padding: 80px 0 60px;
   }
 }
 .footer__col{
@@ -380,7 +381,7 @@
   background-repeat: no-repeat;
   width: 300px;
   height: 317px;
-  top: -18px;
+  top: -9px;
   left: 350px;
 }
 .footer__info{
@@ -411,6 +412,74 @@
   }
 }
 //end footer
+
+//start popup
+.fancybox-content {
+  background: #fafafa;
+  max-width: 970px;
+  min-height: 470px;
+  width: 100%;
+  padding: 0;
+  border-radius: 9px;
+}
+.fancybox-slide--html .fancybox-close-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid $bg;
+  right: 15px;
+  top: 15px;
+  padding: 8px;
+}
+.fancybox-button svg path{
+  fill: black;
+}
+.popup__inner{
+  padding: 70px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  &-img{
+    width: 270px;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.popup__content{
+  max-width: 410px;
+  font-weight: 400;
+  &-title{
+    font-size: 35px;
+    line-height: 42px;
+    color: #545454;
+    margin-bottom: 10px;
+  }
+  &-subtitle{
+    font-size: 20px;
+    line-height: 27px;
+    color: #545454;
+    margin-bottom: 25px;
+  }
+  &-text{
+    color: #4c4c4c;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 25px;
+  }
+  .popup__list{
+    font-weight: 400;
+    a{
+      font-size: 17px;
+      color: #545454;
+      span{
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  }
+}
+
+//end popup
 
 
 

@@ -33,3 +33,40 @@ $(function(){
   });
 
 });
+
+function scrollTo(element) {
+  window.scroll({
+    left: 0,
+    top: element.offsetTop,
+    behavior: 'smooth'
+  })
+}
+
+var shelter = document.querySelector('.shelter');
+var about = document.querySelector('.about-shelter');
+
+var pets = document.querySelector('.pets');
+var slider = document.querySelector('.pets-slider');
+
+var help = document.querySelector('.help');
+var helping = document.querySelector('.help-shelter');
+
+var contacts = document.querySelector('.contacts');
+var footer = document.querySelector('.footer');
+
+
+shelter.addEventListener('click', () => {
+  scrollTo(about);
+});
+
+pets.addEventListener('click', () => {
+    scrollTo(slider);
+});
+
+help.addEventListener('click', () => {
+  scrollTo(helping);
+});
+
+contacts.addEventListener('click', () => {
+  scrollTo(footer);
+});

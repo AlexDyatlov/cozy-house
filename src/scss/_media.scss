@@ -2,6 +2,9 @@
   .header__info-btn::before{
     display: none;
   }
+  .new-pets__item{
+    flex-basis: calc(33.3333% - 30px);
+  }
 }
 
 @media(max-width: 1050px){
@@ -32,6 +35,9 @@
   .donation__inner-img{
     margin-bottom: 20px;
     margin-right: 20px;
+  }
+  .new-pets__item{
+    flex-basis: calc(50% - 30px);
   }
 }
 
@@ -98,6 +104,9 @@
     margin-right: 0;
     width: 287px;
     height: 150px;
+  }
+  .new-pets__item{
+    flex-basis: 100%;
   }
 }
 

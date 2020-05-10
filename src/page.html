@@ -2,145 +2,107 @@
 <html lang="en">
 @@include('components/_head.html')
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
 <body>
-  @@include('components/_header.html')
-  <!-- WRITE CODE HERE -->
-  <section class="about-shelter">
+  <header class="new-header">
     <div class="container">
-      <div class="about-shelter__inner">
-        <a class="about-shelter__img" href="#" style="background-image: url(img/content/pets.png);">
-        </a>
-        <div class="about__item">
-          <div class="about__item-title">
-            О приюте «Уютный Дом»
+      <div class="header__inner">
+        <div class="header__top">
+          <div class="header__logo new-header__logo">
+            <a href="index.html">
+              Уютный Дом
+            </a>
+            <div class="header__text new-header__text">
+              Приют для животных в Тюмени
+            </div>
           </div>
-          <div class="about__item-text">
-            <p>
-              Собаки - самые шумные, но не самые многочисленные обитатели нашего приюта для животных. На первом месте -
-              кошки, они составляют примерно треть из нескольких сотен обитателей приюта.
-            </p>
-            <p>
-              Кроме кошек и собак, в приюте содержатся птицы. Около половины животных сюда принесли их бывшие хозяева
-              или прохожие, обнаружившие бездомного питомца, остальных в приют доставляет полиция или пограничники,
-              которые конфисковали животных при попытке незаконного ввоза-вывоза.
-            </p>
-          </div>
+          <nav class="menu">
+            <div class="menu__btn">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="menu__list new-menu__list">
+              <li>
+                <a class="shelter" href="index.html">
+                  О приюте
+                </a>
+              </li>
+              <li>
+                <a class="pets" href="#">
+                  Наши питомцы
+                </a>
+              </li>
+              <li>
+                <a class="help" href="index.html">
+                  Помочь приюту
+                </a>
+              </li>
+              <li>
+                <a class="contacts" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
-  </section>
+  </header>
   <section class="pets-slider">
     <div class="container">
       <div class="pets-slider__title">
         Наши друзья которые ищут дом
       </div>
-      <div class="pets-slider__inner">
-        <div class="pets__item">
+      <div class="pets-item__inner">
+        <div class="pets__item new-pets__item">
           <a class="pets__item-img" href="#" style="background-image: url(img/content/timmy.jpg);"></a>
           <div class="pets__item-title">Тимон</div>
           <a class="pets__item-btn" data-fancybox data-src="#timmy" href="javascript:;">Узнать больше</a>
         </div>
-        <div class="pets__item">
+        <div class="pets__item new-pets__item">
           <a class="pets__item-img" href="#" style="background-image: url(img/content/jes.jpg);"></a>
           <div class="pets__item-title">Джес</div>
           <a class="pets__item-btn" data-fancybox data-src="#jes" href="javascript:;">Узнать больше</a>
         </div>
-        <div class="pets__item">
+        <div class="pets__item new-pets__item">
           <a class="pets__item-img" href="#" style="background-image: url(img/content/valli.jpg);"></a>
           <div class="pets__item-title">Валли</div>
           <a class="pets__item-btn" data-fancybox data-src="#valli" href="javascript:;">Узнать больше</a>
         </div>
-        <div class="pets__item">
+        <div class="pets__item new-pets__item">
           <a class="pets__item-img" href="#" style="background-image: url(img/content/mikki.jpg);"></a>
           <div class="pets__item-title">Микки</div>
           <a class="pets__item-btn" data-fancybox data-src="#mikki" href="javascript:;">Узнать больше</a>
         </div>
-        <div class="pets__item">
+        <div class="pets__item new-pets__item">
           <a class="pets__item-img" href="#" style="background-image: url(img/content/snow.jpg);"></a>
           <div class="pets__item-title">Снежок</div>
           <a class="pets__item-btn" data-fancybox data-src="#snow" href="javascript:;">Узнать больше</a>
         </div>
-        <div class="pets__item">
+        <div class="pets__item new-pets__item">
           <a class="pets__item-img" href="#" style="background-image: url(img/content/bella.jpg);"></a>
           <div class="pets__item-title">Белла</div>
           <a class="pets__item-btn" data-fancybox data-src="#bella" href="javascript:;">Узнать больше</a>
         </div>
-        <div class="pets__item">
+        <div class="pets__item new-pets__item">
           <a class="pets__item-img" href="#" style="background-image: url(img/content/eva.jpg);"></a>
           <div class="pets__item-title">Ева</div>
           <a class="pets__item-btn" data-fancybox data-src="#eva" href="javascript:;">Узнать больше</a>
         </div>
-        <div class="pets__item">
+        <div class="pets__item new-pets__item">
           <a class="pets__item-img" href="#" style="background-image: url(img/content/zeus.jpg);"></a>
           <div class="pets__item-title">Зевс</div>
           <a class="pets__item-btn" data-fancybox data-src="#zeus" href="javascript:;">Узнать больше</a>
         </div>
       </div>
-      <a class="pets-slider__btn" href="page.html">
-        Познакомьтесь с остальными
-      </a>
     </div>
   </section>
-   <section class="help-shelter">
-    <div class="container">
-      <div class="help-shelter__inner">
-        <div class="help-shelter__title">
-          Чем вы можете помочь нашему приюту
-        </div>
-        <div class="help__list">
-          <div class="help__list-item">
-            <img src="img/icons/food.svg" alt="">
-            <p>Корм для животных</p>
-          </div>
-          <div class="help__list-item">
-            <img src="img/icons/ball.svg" alt="">
-            <p>Игрушки</p>
-          </div>
-          <div class="help__list-item">
-            <img src="img/icons/bowl.svg" alt="">
-            <p>Миски и чашки</p>
-          </div>
-          <div class="help__list-item">
-            <img src="img/icons/shampoo.svg" alt="">
-            <p>Шампуни</p>
-          </div>
-          <div class="help__list-item">
-            <img src="img/icons/leash.svg" alt="">
-            <p>Ошейники и поводки</p>
-          </div>
-          <div class="help__list-item">
-            <img src="img/icons/sleeping.svg" alt="">
-            <p>Спальное место</p>
-          </div>
-          <div class="help__list-item">
-            <img src="img/icons/pills.svg" alt="">
-            <p>Витамины</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="donation">
-    <div class="container">
-      <div class="donation__inner">
-        <a class="donation__inner-img"  href="#"
-          style="background-image: url(img/content/dog.png);">
-        </a>
-        <div class="donation__content">
-          <div class="donation__content-title">
-            Кроме того, вы можете оказать финансовую помощь
-          </div>
-          <div class="donation__content-description">        
-            Наименование банка / Тип банковского счета
-          </div>
-          <a class="donation-btn" href="#">8380 2880 8028 8791 7435</a>
-          <div class="donation__content-text">
-            Все средства, в полном объеме, идут на содержание собак и кошек, обеспечение полного цикла лечения животных, а также ухода за тяжелобольными собаками и кошками, закупку лекарств, еды и перевозку животных.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> 
 
   <div id="timmy">
     <div class="popup__inner">
@@ -341,8 +303,7 @@
       </div>
     </div>
   </div>
-
-  <!-- STOP WRITE CODE -->
+  
   @@include('components/_footer.html')
   @@include('components/_scripts.html')
 </body>

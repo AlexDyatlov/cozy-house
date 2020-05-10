@@ -9,6 +9,10 @@
   background-size: cover;
   background-position: center;
 }
+.new-header{
+  height: 112px;
+  background-color: #fafafa;
+}
 .header__top{
   display: flex;
   justify-content: space-between;
@@ -23,12 +27,20 @@
     color: $bg;
   }
 }
+.new-header__logo{
+  a{
+    color: #545454;
+  }
+}
 .header__text{
   font-size: 13px;
   color: #fff;
   line-height: 29px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+}
+.new-header__text{
+  color: #000;
 }
 .menu__list{
   li{
@@ -54,6 +66,11 @@
       background-color: $bg;
       }
     }
+  }
+}
+.new-menu__list{
+  a{
+    color: #545454;
   }
 }
 .header__info{
@@ -131,7 +148,7 @@
   background-color: #f6f6f6;
   .slick-dots{
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 30px;
     li{
       display: inline-block;
       margin-left: 4px;
@@ -164,14 +181,26 @@
   max-width: 910px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 35px;
   text-align: center;
+}
+.pets-item__inner{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: -30px;
+}
+.new-pets__item{
+  flex-basis: calc(25% - 30px);
+  margin-left: 30px;
 }
 .pets__item{
   max-width: 270px;
   min-height: 424px;
   background-color: #fafafa;
   border-radius: 9px;
+  width: 100%;
+  margin-bottom: 35px;
   &-img{
     height: 270px;
     width: 100%;
@@ -468,9 +497,11 @@
   }
   .popup__list{
     font-weight: 400;
+    list-style-type: disc;
     a{
       font-size: 17px;
       color: #545454;
+      list-style-type: disc;
       span{
         font-size: 15px;
         font-family: 'Open Sans', sans-serif;

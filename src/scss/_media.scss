@@ -76,25 +76,39 @@
     }
   }
     .menu__btn{
-      display: block;
-      width: 35px;
-      div{
-        background-color: $bg;
-        height: 4px;
-        & + div{
-          margin-top: 6px;
-        }
+      svg{
+        display: block;
+      }
+      svg path{
+        stroke-width: 10;
+        stroke-linecap: round;
+        stroke: $bg;
+        fill: none;
+        transition: all .5s ease-in-out;
+      }
+      .top_bar,
+      .bottom_bar{
+        stroke-dasharray: 240px 910px;
+      }
+      .middle_bar{
+        stroke-dasharray: 240px 240px;
+      }
+      .open .top_bar,
+      .open .bottom_bar{
+        stroke-dashoffset: -650px;
+      }
+      .open .middle_bar{
+        stroke-dasharray: 0px 220px;
+        stroke-dashoffset: -120px;
       }
     }
-  }
-  .footer__col{
-    width: 100%;
-    margin-bottom: 30px;
-  }
-.footer__inner{
-  flex-wrap: wrap;
-}
-
+    .footer__col{
+      max-width: 100%;
+    }
+    .footer__inner{
+      display: block;
+   }
+ }
 @media(max-width: 625px){
   .pets-slider .slick-dots li button{
     width: 16px;
@@ -107,6 +121,12 @@
   }
   .new-pets__item{
     flex-basis: 100%;
+  }
+  .footer__col{
+    &-title{
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 }
 
@@ -122,7 +142,14 @@
     line-height: 32px;
   }
   .donation-btn{
-    font-size: 17px;
+    font-size: 16px;
+  }
+  .footer__info{
+    font-size: 18px;
+    padding-left: 40px;
+    &::before{
+      font-size: 25px;
+    }
   }
 }
 

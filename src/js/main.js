@@ -28,45 +28,18 @@ $(function(){
     ]
   });
   
-  $('.menu__btn').on('click', function(){
+  const menu = document.querySelector("svg");
+  menu.addEventListener("click", morph);
+  function morph() {
+    menu.classList.toggle("open");
     $('.menu__list').slideToggle();
-  });
+  }
 
 });
 
-function scrollTo(element) {
-  window.scroll({
-    left: 0,
-    top: element.offsetTop,
-    behavior: 'smooth'
-  })
-}
-
-var shelter = document.querySelector('.shelter');
-var about = document.querySelector('.about-shelter');
-
-var pets = document.querySelector('.pets');
-var slider = document.querySelector('.pets-slider');
-
-var help = document.querySelector('.help');
-var helping = document.querySelector('.help-shelter');
-
-var contacts = document.querySelector('.contacts');
-var footer = document.querySelector('.footer');
-
-
-shelter.addEventListener('click', () => {
-  scrollTo(about);
+var scroll = new SmoothScroll('a[href*="#"]',{
+  speed: 700,
+  speedAsDuration: true
 });
 
-pets.addEventListener('click', () => {
-    scrollTo(slider);
-});
-
-help.addEventListener('click', () => {
-  scrollTo(helping);
-});
-
-contacts.addEventListener('click', () => {
-  scrollTo(footer);
-});
+AOS.init();

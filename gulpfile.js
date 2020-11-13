@@ -92,7 +92,10 @@ gulp.task("style", function () {
 	return gulp
 		.src([
 			//указываем, где брать исходники
-			"node_modules/normalize.css/normalize.css",
+			'node_modules/normalize.css/normalize.css',
+			'node_modules/slick-carousel/slick/slick.css',
+			'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+			'node_modules/aos/dist/aos.css'
 		])
 		.pipe(sourcemaps.init())
 		.pipe(concat("libs.min.css")) //склеиваем их в один файл с указанным именем
@@ -107,7 +110,11 @@ gulp.task("script", function () {
 	return gulp
 		.src([
 			//тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
-			"node_modules/jquery/dist/jquery.js",
+			'node_modules/jquery/dist/jquery.js',
+			'node_modules/slick-carousel/slick/slick.js',
+			'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+			'node_modules/aos/dist/aos.js',
+			"node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
 		])
 		.pipe(size())
 		.pipe(sourcemaps.init())

@@ -4,9 +4,7 @@
 // start header
 .header{
   min-height: 925px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: center/cover no-repeat;
 }
 .new-header{
   height: 112px;
@@ -69,11 +67,6 @@
     }
   }
 }
-.new-menu__list{
-  a{
-    color: $color-text;
-  }
-}
 .header__info{
   max-width: 395px;
   &-title{
@@ -96,8 +89,7 @@
     position: relative;
     &::before{
       content: '';
-      background-image: url(../img/content/headerdog-bg.png);
-      background-repeat: no-repeat;
+      background: no-repeat url('../img/content/headerdog-bg.png');
       position: absolute;
       width: 658px;
       height: 728px;
@@ -120,9 +112,7 @@
     min-height: 410px;
     max-width: 300px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: center/cover no-repeat;
   }
 }
 .about__item{
@@ -204,9 +194,7 @@
   &-img{
     height: 270px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: center/cover no-repeat;
     display: block;
     margin-bottom: 30px;
     outline: none;
@@ -335,9 +323,7 @@
     max-width: 505px;
     height: 261px;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: center/cover no-repeat;
   }
 }
 .donation__content{
@@ -385,10 +371,7 @@
 
 // start footer
 .footer{
-  background-image: url(../img/footer-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: center/cover no-repeat url('../img/footer-bg.jpg');
   min-height: 362px;
   &__inner{
     display: flex;
@@ -414,8 +397,7 @@
 .footer__col-img::before{
   content: '';
   position: absolute;
-  background-image: url(../img/content/footerdog-bg.png);
-  background-repeat: no-repeat;
+  background: no-repeat url('../img/content/footerdog-bg.png');
   width: 300px;
   height: 317px;
   top: -24px;
@@ -477,9 +459,7 @@
   &-img{
     width: 270px;
     height: 270px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: center/cover no-repeat;
   }
 }
 .popup__content{

@@ -75,6 +75,12 @@
       }
     }
   }
+  .new-menu__list{
+    top: 100px;
+    a{
+      color: $color-text;
+    }
+  }
     .menu__btn{
       svg{
         display: block;

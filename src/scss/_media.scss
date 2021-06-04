@@ -5,6 +5,9 @@
   .new-pets__item{
     flex-basis: calc(33.3333% - 30px);
   }
+  .pets__item{
+    max-width: 90%;
+  }
 }
 
 @media(max-width: 1050px){
@@ -116,9 +119,12 @@
    }
  }
 @media(max-width: 625px){
-  .pets-slider .slick-dots li button{
+  .pets-slider .slick-dots .swiper-pagination-bullet{
     width: 16px;
     height: 16px;
+  }
+  .pets__item{
+    margin: 0 auto 35px;
   }
   .donation__inner-img{
     margin-right: 0;

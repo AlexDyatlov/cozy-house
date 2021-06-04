@@ -1,32 +1,4 @@
 $(function(){
-
-  $('.pets-slider__inner').slick({
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    nextArrow: '<button type="button" class="slider-arrows slider-arrows__right"></button>',
-    prevArrow: '<button type="button" class="slider-arrows slider-arrows__left"></button>',
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 625,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: true,
-        }
-      },
-    ]
-  });
   
   const menu = document.querySelector("svg");
   menu.addEventListener("click", morph);
@@ -43,3 +15,47 @@ var scroll = new SmoothScroll('a[href*="#"]',{
 });
 
 AOS.init();
+
+const swiper = new Swiper('.pets-slider__inner', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.slider-arrows__right',
+    prevEl: '.slider-arrows__left',
+  },
+  pagination: {
+    el: '.slick-dots',
+    type: 'bullets',
+    clickable: true
+  },
+  breakpoints: {
+    625: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+  on: {
+    init: function() {
+			checkArrow();
+    },
+    resize: function () {
+			checkArrow();
+    }
+  }
+});
+
+function checkArrow() {
+  const swiperPrev = document.querySelector('.slider-arrows__left');
+  const swiperNext = document.querySelector('.slider-arrows__right');
+  const swiperDots = document.querySelector('.swiper-pagination');
+  if ( window.innerWidth > 1200  ) {
+    swiperPrev.style.display = 'block';
+    swiperNext.style.display = 'block';
+    swiperDots.style.display = 'none';
+  } else {
+    swiperPrev.style.display = 'none';
+    swiperNext.style.display = 'none';
+    swiperDots.style.display = 'block';
+  }
+};

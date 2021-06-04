@@ -1,23 +1,467 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
-  </head>
+    <title>Уютный дом</title>
+</head>
 
 <body>
-  <header>
-
+  <header class="header" style="background-image: url(img/header-bg.jpg);">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="#">
+            Уютный Дом
+          </a>
+          <div class="header__text">
+            Приют для животных в Тюмени
+          </div>
+        </div>
+        <nav class="menu">
+          <div class="menu__btn">
+            <svg viewBox="0 0 800 600" width="60px" height="60px" class="">
+              <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" class="top_bar" />
+            
+              <path d="M300,320 L540,320" class="middle_bar" />
+            
+              <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" class="bottom_bar" transform="translate(480, 320) scale(1, -1) translate(-480, -318)" />
+            </svg>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#shelter">
+                О приюте
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#pets">
+                Наши питомцы
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#help">
+                Помочь приюту
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#contacts">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__info" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+        <div class="header__info-title">
+          Дом нужен не только людям
+        </div>
+        <div class="header__info-description">
+          Если вы хотите взять в семью питомца, не спешите обращаться к заводчику. Для начала посетите приют – там живет большое количество животных, которые нуждаются в тепле и заботе и готовы дарить вам свое внимание и любовь.
+        </div>
+        <a class="header__info-btn" href="#pets">Завести себе друга</a>
+      </div>
+    </div>
+  </div>
 </header>
   <!-- WRITE CODE HERE -->
+  <section id="shelter" class="about-shelter">
+    <div class="container">
+      <div class="about-shelter__inner" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="about-shelter__img" style="background-image: url(img/content/pets.png);"></div>
+        <div class="about__item">
+          <div class="about__item-title">
+            О приюте «Уютный Дом»
+          </div>
+          <div class="about__item-text">
+            <p>
+              Собаки - самые шумные, но не самые многочисленные обитатели нашего приюта для животных. На первом месте -
+              кошки, они составляют примерно треть из нескольких сотен обитателей приюта.
+            </p>
+            <p>
+              Кроме кошек и собак, в приюте содержатся птицы. Около половины животных сюда принесли их бывшие хозяева
+              или прохожие, обнаружившие бездомного питомца, остальных в приют доставляет полиция или пограничники,
+              которые конфисковали животных при попытке незаконного ввоза-вывоза.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pets" class="pets-slider">
+    <div class="container">
+      <div class="pets-slider__title" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+        Наши друзья которые ищут дом
+      </div>
+      <div class="pets-slider__inner">
+        <button class="slider-arrows__left slider-arrows"></button>
+        <button class="slider-arrows__right slider-arrows"></button>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="pets__item">
+              <a class="pets__item-img" href="#" style="background-image: url(img/content/timmy.jpg);"></a>
+              <div class="pets__item-title">Тимон</div>
+              <a class="pets__item-btn" data-fancybox data-src="#timmy" href="javascript:;">Узнать больше</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pets__item">
+              <a class="pets__item-img" href="#" style="background-image: url(img/content/jes.jpg);"></a>
+              <div class="pets__item-title">Джес</div>
+              <a class="pets__item-btn" data-fancybox data-src="#jes" href="javascript:;">Узнать больше</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pets__item">
+              <a class="pets__item-img" href="#" style="background-image: url(img/content/valli.jpg);"></a>
+              <div class="pets__item-title">Валли</div>
+              <a class="pets__item-btn" data-fancybox data-src="#valli" href="javascript:;">Узнать больше</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pets__item">
+              <a class="pets__item-img" href="#" style="background-image: url(img/content/mikki.jpg);"></a>
+              <div class="pets__item-title">Микки</div>
+              <a class="pets__item-btn" data-fancybox data-src="#mikki" href="javascript:;">Узнать больше</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pets__item">
+              <a class="pets__item-img" href="#" style="background-image: url(img/content/snow.jpg);"></a>
+              <div class="pets__item-title">Снежок</div>
+              <a class="pets__item-btn" data-fancybox data-src="#snow" href="javascript:;">Узнать больше</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pets__item">
+              <a class="pets__item-img" href="#" style="background-image: url(img/content/bella.jpg);"></a>
+              <div class="pets__item-title">Белла</div>
+              <a class="pets__item-btn" data-fancybox data-src="#bella" href="javascript:;">Узнать больше</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pets__item">
+              <a class="pets__item-img" href="#" style="background-image: url(img/content/eva.jpg);"></a>
+              <div class="pets__item-title">Ева</div>
+              <a class="pets__item-btn" data-fancybox data-src="#eva" href="javascript:;">Узнать больше</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pets__item">
+              <a class="pets__item-img" href="#" style="background-image: url(img/content/zeus.jpg);"></a>
+              <div class="pets__item-title">Зевс</div>
+              <a class="pets__item-btn" data-fancybox data-src="#zeus" href="javascript:;">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination slick-dots"></div>
+      </div>
+      <a class="pets-slider__btn" href="page.html">
+        Познакомьтесь с остальными
+      </a>
+    </div>
+  </section>
+  <section id="help" class="help-shelter">
+    <div class="container">
+      <div class="help-shelter__inner">
+        <div class="help-shelter__title">
+          Чем вы можете помочь нашему приюту
+        </div>
+        <div class="help__list">
+          <div class="help__list-item">
+            <img src="img/icons/food.svg" alt="">
+            <p>Корм для животных</p>
+          </div>
+          <div class="help__list-item">
+            <img src="img/icons/ball.svg" alt="">
+            <p>Игрушки</p>
+          </div>
+          <div class="help__list-item">
+            <img src="img/icons/bowl.svg" alt="">
+            <p>Миски и чашки</p>
+          </div>
+          <div class="help__list-item">
+            <img src="img/icons/shampoo.svg" alt="">
+            <p>Шампуни</p>
+          </div>
+          <div class="help__list-item">
+            <img src="img/icons/leash.svg" alt="">
+            <p>Ошейники и поводки</p>
+          </div>
+          <div class="help__list-item">
+            <img src="img/icons/sleeping.svg" alt="">
+            <p>Спальное место</p>
+          </div>
+          <div class="help__list-item">
+            <img src="img/icons/pills.svg" alt="">
+            <p>Витамины</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="donation">
+    <div class="container">
+      <div class="donation__inner">
+        <div class="donation__inner-img" style="background-image: url(img/content/dog.png);"></div>
+        <div class="donation__content">
+          <div class="donation__content-title">
+            Кроме того, вы можете оказать финансовую помощь
+          </div>
+          <div class="donation__content-description">
+            Наименование банка / Тип банковского счета
+          </div>
+          <a class="donation-btn" href="#">8380 2880 8028 8791 7435</a>
+          <div class="donation__content-text">
+            Все средства, в полном объеме, идут на содержание собак и кошек, обеспечение полного цикла лечения животных,
+            а также ухода за тяжелобольными собаками и кошками, закупку лекарств, еды и перевозку животных.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <div id="timmy">
+    <div class="popup__inner">
+      <div class="popup__inner-img">
+        <img src="img/content/timmy.jpg" alt="">
+      </div>
+      <div class="popup__content">
+        <div class="popup__content-title">
+          Тимон
+        </div>
+        <div class="popup__content-subtitle">
+          Британец
+        </div>
+        <div class="popup__content-text">
+          Британский котик по кличке Тимон. Добрый и ласковый плюшевый медвежонок. Чудесный характер.
+        </div>
+        <ul class="popup__list">
+          <li><a href="#">Возраст: <span>14 месяцев</span></a></li>
+          <li><a href="#">Вакцинация: <span>да</span></a></li>
+          <li><a href="#">Болезни: <span>нет</span></a></li>
+          <li><a href="#">Кастрация/стерилизация: <span>нет</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="jes">
+    <div class="popup__inner">
+      <div class="popup__inner-img">
+        <img src="img/content/jes.jpg" alt="">
+      </div>
+      <div class="popup__content">
+        <div class="popup__content-title">
+          Джес
+        </div>
+        <div class="popup__content-subtitle">
+          Лабрадор
+        </div>
+        <div class="popup__content-text">
+          Щенок девочка, ласковая, доброжелательная. Обожает людей, объятия, прыгает на руки, как только видит человека.
+          Хорошо уживается с другими собаками, любит всех заводить и играть. Послушная.
+        </div>
+        <ul class="popup__list">
+          <li><a href="#">Возраст: <span>5 месяцев</span></a></li>
+          <li><a href="#">Вакцинация: <span>да</span></a></li>
+          <li><a href="#">Болезни: <span>нет</span></a></li>
+          <li><a href="#">Кастрация/стерилизация: <span>нет</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="valli">
+    <div class="popup__inner">
+      <div class="popup__inner-img">
+        <img src="img/content/valli.jpg" alt="">
+      </div>
+      <div class="popup__content">
+        <div class="popup__content-title">
+          Валли
+        </div>
+        <div class="popup__content-subtitle">
+          Золотистый ретривер
+        </div>
+        <div class="popup__content-text">
+          Разрешает себя гладить, подает лапу, играет в игрушки. Приучен к поводку, с удовольстием гуляет.
+        </div>
+        <ul class="popup__list">
+          <li><a href="#">Возраст: <span>5 лет</span></a></li>
+          <li><a href="#">Вакцинация: <span>да</span></a></li>
+          <li><a href="#">Болезни: <span>нет</span></a></li>
+          <li><a href="#">Кастрация/стерилизация: <span>нет</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="mikki">
+    <div class="popup__inner">
+      <div class="popup__inner-img">
+        <img src="img/content/mikki.jpg" alt="">
+      </div>
+      <div class="popup__content">
+        <div class="popup__content-title">
+          Микки
+        </div>
+        <div class="popup__content-subtitle">
+          Джек рассел терьер
+        </div>
+        <div class="popup__content-text">
+          Щенок с ярким окрасом, активный, беззлобный, веселый мальчик. Хорошо уживается с другими собаками по вольеру.
+        </div>
+        <ul class="popup__list">
+          <li><a href="#">Возраст: <span>7 месяцев</span></a></li>
+          <li><a href="#">Вакцинация: <span>да</span></a></li>
+          <li><a href="#">Болезни: <span>нет</span></a></li>
+          <li><a href="#">Кастрация/стерилизация: <span>нет</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="snow">
+    <div class="popup__inner">
+      <div class="popup__inner-img">
+        <img src="img/content/snow.jpg" alt="">
+      </div>
+      <div class="popup__content">
+        <div class="popup__content-title">
+          Снежок
+        </div>
+        <div class="popup__content-subtitle">
+          Короткошерстный котик
+        </div>
+        <div class="popup__content-text">
+          Снежок редко сидит на месте, любит играть и прыгать. Белый и пушистый, очень нежный и ласковый. Прекрасно
+          уживается с маленькими детьми и другими домашними питомцами.
+        </div>
+        <ul class="popup__list">
+          <li><a href="#">Возраст: <span>15 месяцев</span></a></li>
+          <li><a href="#">Вакцинация: <span>да</span></a></li>
+          <li><a href="#">Болезни: <span>нет</span></a></li>
+          <li><a href="#">Кастрация/стерилизация: <span>да</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="bella">
+    <div class="popup__inner">
+      <div class="popup__inner-img">
+        <img src="img/content/bella.jpg" alt="">
+      </div>
+      <div class="popup__content">
+        <div class="popup__content-title">
+          Белла
+        </div>
+        <div class="popup__content-subtitle">
+          Дворняжка
+        </div>
+        <div class="popup__content-text">
+          Выросла в приюте. Активная, веселая, заводная собака. Обожает внимание, ходит за человеком хвостиком.
+          Обучаема, очень умная. Любит прыгать и целоваться))
+        </div>
+        <ul class="popup__list">
+          <li><a href="#">Возраст: <span>2 года</span></a></li>
+          <li><a href="#">Вакцинация: <span>да</span></a></li>
+          <li><a href="#">Болезни: <span>нет</span></a></li>
+          <li><a href="#">Кастрация/стерилизация: <span>нет</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="eva">
+    <div class="popup__inner">
+      <div class="popup__inner-img">
+        <img src="img/content/eva.jpg" alt="">
+      </div>
+      <div class="popup__content">
+        <div class="popup__content-title">
+          Ева
+        </div>
+        <div class="popup__content-subtitle">
+          Пудель
+        </div>
+        <div class="popup__content-text">
+          По характеру дружелюбная, трусовата. На имя отзывается сразу. Никогда не проявляют агрессию ни по отношению к
+          человеку, ни по отношению к другим собакам.
+        </div>
+        <ul class="popup__list">
+          <li><a href="#">Возраст: <span>8 месяцев</span></a></li>
+          <li><a href="#">Вакцинация: <span>да</span></a></li>
+          <li><a href="#">Болезни: <span>нет</span></a></li>
+          <li><a href="#">Кастрация/стерилизация: <span>да</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="zeus">
+    <div class="popup__inner">
+      <div class="popup__inner-img">
+        <img src="img/content/zeus.jpg" alt="">
+      </div>
+      <div class="popup__content">
+        <div class="popup__content-title">
+          Зевс
+        </div>
+        <div class="popup__content-subtitle">
+          Британец
+        </div>
+        <div class="popup__content-text">
+          У Зевса светлая, очень густая плюшевая шёрстка, любит лежать на спине, идеальный домашний питомец для тех, кто
+          любит покой и тишину. Терпеливый и аккуратный.
+        </div>
+        <ul class="popup__list">
+          <li><a href="#">Возраст: <span>3 года</span></a></li>
+          <li><a href="#">Вакцинация: <span>да</span></a></li>
+          <li><a href="#">Болезни: <span>нет</span></a></li>
+          <li><a href="#">Кастрация/стерилизация: <span>да</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <!-- STOP WRITE CODE -->
-  <footer>
-  
+  <footer id="contacts" class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <div class="footer__col-title">
+          Для вопросов и предложений
+        </div>
+        <ul class="footer__col-list">
+          <li>
+            <a class="footer__info" href="mailto:shelter-pets@mail.ru">
+              shelter-pets@mail.ru
+            </a>
+          </li>
+          <li>
+            <a class="footer__info footer__info-phone" href="tel:79387908428">
+              +7 (938) 790-84-28
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col footer__col-img">
+        <div class="footer__col-title">
+          Мы ждем вашего визита
+        </div>
+        <div class="footer__info footer__info-street">
+          Тюмень, ул. Минская, 12
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
   <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>

@@ -1,0 +1,12 @@
+$bg: #f1cdb3;
+$color-text: #545454;
+$color-bg: #fafafa;
+
+@mixin f400{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+@mixin Raleway{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
